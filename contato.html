@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasil Encantado</title>
+    <link rel="stylesheet" href="css/contatos.css">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 <body>
     <header>
@@ -13,11 +13,11 @@
         <div class="cabecalho">
             <p>Brasil Encantado</p>
             <nav>
-                <a href="destino.html">Destinos</a>
-                <a href="culinaria.html">Culinária</a>
-                <a href="contato.html">Contato</a>
-                <a href="gastronomia.html">Gastronomia</a>
-            </nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="destino.html" target="_blank">Destinos</a>
+            <a href="contato.html" target="_blank">Contato</a>
+            <a href="gastronomia.html" target="_blank">Gastronomia</a>
+        </nav>
         </div>
 
     </header>
@@ -27,10 +27,63 @@
 
     <main>
 
+        <section class="contato">
+        <h2 id="Titulo_Contato"> Entre em Contato Conosco</h2>
+         <h3>Reclamações e Avaliações</h3>
+        <p>Se você tiver alguma dúvida ou quiser saber mais sobre nossos serviços, fale com a gente!</p>
+
+        <form action="#" method="post">
+
+            <p>Teve algum problema na sua viagem? Conte pra gente, e com a gente</p>
+
+            <label>Nome da reserva:</label>
+            <input type="text" name="name" required>
+
+            <label>Telefone:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Destino da viagem:</label>
+            <select name="Destino da viagem">
+                <option value="foz_do_iguacu">Foz do Iguaçu</option>
+                <option value="rio_de_janeiro">Rio de janeiro</option>
+                <option value="salvador">Salvador</option>
+                <option value="outro">Outros</option>
+            </select>
         
 
 
+
+    
         
+           
+            <label>Empresa / Destino:</label>
+            <input type="text" name="empresa" required>
+
+            <label>Tipo de problema:</label>
+            <select name="problema">
+                <option value="cancelamento">Cancelamento</option>
+                <option value="atraso">Atraso</option>
+                <option value="cobranca">Cobrança indevida</option>
+                <option value="atendimento">Atendimento ruim</option>
+                <option value="outro">Outros</option>
+            </select>
+
+            <label>Avaliação (1 a 10):</label>
+                <div class="avaliacao_range">
+                    <input type="range" min="1" max="10" value="5" id="range_avaliacao" 
+                    oninput="document.getElementById('valor_avaliacao').textContent = this.value">
+                        <span id="valor_avaliacao">5</span>
+                </div> 
+
+            <label>Descreva o problema:</label>
+            <textarea name="reclamacao" required></textarea>
+
+            <input type="submit" value="Enviar Reclamação">
+        </form>
+      </section>
     </main>
 
 
@@ -39,7 +92,7 @@
     <footer>
             <nav>
                 <ul>
-                    <li>Miguel Souza, Damasio, Bressan</li>
+                    <li>Miguel Souza, João Damasio, Guilherme Bressam</li>
                     <li>2026</li>
                     <li>Brasil Encantado</li>
                     <li> (19) 4002-8922 @brasilencantadoclerivaldo.com</li>
